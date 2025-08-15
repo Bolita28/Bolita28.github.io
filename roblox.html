@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Roblox</title>
+<style>
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body, html {
+font-family: Times New Roman, sans-serif;
+height: 100%;
+}
+
+/* FONDO DEL LOGIN */
+#login-container {
+background: url('fondo.jpeg') no-repeat center center;
+background-size: cover;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.login-box {
+background-color: rgba(255, 255, 255,0.9);
+padding: 30px;
+border-radius: 10px;
+width: 300px;
+text-align: center;
+}
+.login-box h2 {
+margin-bottom: 20px;
+}
+
+.login-box input {
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.login-box button {
+padding: 10px 20px;
+background-color: #ff0000;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+}
+
+#login-error {
+color: red;
+margin-top: 10px;
+}
+  /* CONTENIDO */
+        #content {
+            display: none;
+            background-color: #f8f8f8;
+        }
+header{
+background: url('negro.jpeg') no-repeat center center;
+background-size: cover;
+padding: 20px;
+text-align: center;
+color: white;
+}
+
+nav {
+background-color: #eb8dd2;
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 10px 0;
+}
+
+nav a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #fc5bb1;
+}
+
+main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+section img {
+max-width: 100px;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+h2 {
+color: #ed0983;
+margin-top: 10px;
+}
+
+p, ul, ol {
+margin-top: 10px;
+}
+  </style>
+</head>
+</body>
+
+   <!-- INICIO DE SESIÓN -->
+    <div id="login-container">
+        <div class="login-box">
+            <h2>Inicia sesión</h2>
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button onclick="login()">Entrar</button>
+            <p id="login-error"></p>
+        </div>
+    </div>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <div id="content">
+        <header>
+            <h1> Explora el Mundo de Roblox</h1>
+        </header>
+
+        <nav>
+        <a href="#historia">Historia</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#robux">¿Que son los robux?</a>
+        <a href="#populares">Popurales</a>
+        <a href="#ranking">Ranking</a>
+
+        </nav>
+
+        <main>
+        <section id="historia">
+        <h2>Historia de Roblox</h2>
+        <p> Roblox es una plataforma de videojuegos en línea que permite a los usuarios crear, compartir y jugar juegos creados por otros. Fue desarrollada por David Baszucki y Erik Cassel, quienes comenzaron a trabajar en el proyecto en 2003. En ese entonces, ambos estaban interesados en la física y la simulación educativa, lo que los llevó a crear una plataforma que permitiera a los usuarios experimentar con la creación y el aprendizaje a través del juego.
+        </p>
+        <p>La primera versión oficial de Roblox se lanzó en 2006, y en ese momento no era muy conocida. Al principio, el sitio tenía gráficos sencillos y una comunidad pequeña, pero lo que lo hacía especial era que cualquier persona podía crear su propio juego usando una herramienta llamada Roblox Studio. Esta herramienta permite diseñar mundos, personajes y mecánicas de juego con bastante libertad, lo que atrajo a muchos jóvenes desarrolladores y jugadores creativos. </p>
+        <p> Con el tiempo, Roblox fue mejorando su tecnología, agregando funciones sociales como chat, avatares personalizables, amigos y grupos, lo que ayudó a crear una comunidad más activa. También se comenzó a realizar eventos especiales dentro de la plataforma, como conciertos virtuales, juegos temáticos y colaboraciones con marcas conocidas. Uno de los momentos más importantes en su crecimiento fue durante la pandemia de 2020, cuando muchas personas estaban en casa y buscaban formas de entretenerse y socializar en línea. Roblox se convirtió en un lugar ideal para eso, ya que permitía no solo jugar, sino también crear experiencias interactivas y compartirlas con amigos de todo el mundo.</p>
+        <p>Hoy en día, Roblox no es solo una plataforma de juegos, sino también un espacio donde muchas personas aprenden a programar, diseñar y colaborar, e incluso algunos desarrolladores han comenzado sus carreras creando juegos en Roblox. Es un ejemplo de cómo la creatividad y la tecnología pueden unirse para formar una comunidad mundial de jugadores y creadores.</p>
+        </section>
+       
+            <section id="Mi avatar">
+            <h2>Mi avatar</h2>
+            <ul>
+            <li>Changuito</li>
+            </ul>
+            <img src="avatar.jpg"> 
+
+        </section>
+
+        <section id="tipos">
+        <h2> Tops 5 Tipos de Juegos de Roblox mas Jugados</h2>
+        <ul>
+        <li>Juegos de Roleplay</li>
+        <li>Juegos de Batalla</li>
+        <li>Juegos de Simulación</li>
+        <li>Juegos de Obby</li>
+        <li>Juegos de Terror</li>
+        </ul>
+        <img src="juegos.JPEG"> 
+        </section>
+
+        <section id="robux">
+        <h2>¿Que son los robux?</h2>
+            <p> Robux es la moneda virtual utilizada en la plataforma de juegos en línea Roblox. Los usuarios pueden usar Robux para comprar diversos artículos dentro de Roblox, como ropa y accesorios para sus avatares, pases de juego y mejoras en los juegos. También pueden usar Robux para crear y promocionar sus propios juegos, e incluso obtener recompensas monetarias por el contenido que crean.</p>
+            <img src="robux.PNG">
+        </section>
+
+        <section id="populares">
+            <h2> Top 5 juegos mas jugados en Roblox</h2>
+            <ol>
+            <li>Brookhaven RP: 58.6 B de visitas</li>
+            <li>Blox Fruits: 45.6 B de visitas</li>
+            <li>Adop me!: 38.3 B de visitas</li>
+            <li>Tower of Hell: 24.3 B de visitas</li>
+            <li>Murder Mystery: 19.1 B de visitas</li>
+            </ol>
+            <img src="juego.JPEG">
+            </section>
+             
+
+            <section id="ranking">
+              <h2>Rankings</h2>
+              <p>Cada juego tiene su propio ranking, el ranking de cada juego se puede ver en una pagina llamda BloxStats</p>
+              <img src="ranking.PNG">
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const error = document.getElementById("login-error");
+
+            if (email && password) {
+                document.getElementById("login-container").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                error.textContent = "Por favor, ingresa un correo y una contraseña.";
+            }
+        }
+    </script>
+</body>    
+</html>    
